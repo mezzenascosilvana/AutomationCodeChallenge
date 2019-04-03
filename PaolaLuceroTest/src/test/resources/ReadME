@@ -1,0 +1,25 @@
+INSTALLATIONS:
+ 
+•	Install Java (Preferably Eclipse).
+•	 Install jdk8
+•	Install TestNG libraries.
+•	Download Selenium drivers for Chrome and Mozilla.
+•	Download the project from the URL provided.
+
+CONFIGURATIONS:
+ 
+•	Start Eclipse and import the project as a maven project.
+•	Within the project locate the “global properties” file and configure the paths according to the location of the rest of the project and where you have downloaded the drivers.
+
+The approach used was:
+
+•	Codification with JAVA using Eclipse, Maven, TestNG, and the pattern Page Object for modelling the pages.
+•      Once the project is imported, for all the dependencies to synchronize correctly you will need to update the Maven project
+•	Within src/test /java: you will find the test case package with all the test classes made. 
+•	Within the POMP file:  You will find all the dependencies that were considered necessary. 
+•	Within the Test case suite there is a test case that performs a set up and runs before any other test case to "set up" the environmet. In the end of the suite, runs another script to clean of the environment. Then we have test cases to perform a search with the requested data or requirements.
+
+How to execute the test cases?
+
+If you have already imported the project, have TestNG installed and synchronized Maven, locate the file TestingTrivago.xml within
+ src/main/ resource. After that, right click on it and select “execute with TestNG”. This will trigger all the test suites created within the test package.

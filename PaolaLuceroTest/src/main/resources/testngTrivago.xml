@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Trivago Suite">
+
+	<parameter name="browser" value="chrome" />
+	<parameter name="nameHotel1Spa" value="The River Lee" />
+	<parameter name="nameHotel2Spa" value="Jurys Inn Cork" />
+	<parameter name="nameFilter" value="Spa" />
+	<parameter name="sizeDescription" value="Double room" />
+	<parameter name="location" value="Cork" />
+	<parameter name="numberOfMonths" value="1" />
+	<listeners>
+		<listener class-name="test.Listeners" />
+	</listeners>
+
+	<test name="Automation Test_Spa">
+		<classes>
+			<class name="test.TrivagoTest_SpaFilter" />			
+		</classes>
+		
+	</test> <!-- Automation Test_Spa -->
+    <test name="Automation WiFiFilter">
+		
+		<classes>
+			<class name="test.TrivagoTest_WiFiFilter" />			
+		</classes>
+	</test> <!-- Automation WiFiFilter -->
+
+</suite> <!-- Trivago Suite -->
